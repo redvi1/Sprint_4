@@ -13,19 +13,8 @@ public class MainPage {
         this.driver = driver;
     }
 
-    // Шапка
-
-    // Лого Яндекс
-    public By yandexLogo = By.className("Header_LogoYandex__3TSOI");
-
-    // Лого Самокат
-    public By scooterLogo = By.className("Header_LogoScooter__3lsAR");
-
     // Кнопка "Заказать" в шапке
     public By topOrderButton = By.xpath("//div[@class='Header_Nav__AGCXC']/button[text()='Заказать']");
-
-    // Кнопка "Статус заказа" в шапке
-    public By statusButton = By.xpath("//button[contains(text(),'Статус заказа')]");
 
     // Средний блок с заказом
 
@@ -88,11 +77,6 @@ public class MainPage {
     // Клик по нижней кнопке "Заказать"
     public void clickBottomOrderButton() {
         driver.findElement(bottomOrderButton).click();
-    }
-
-    // Клик по кнопке "Статус заказа"
-    public void clickStatusButton() {
-        driver.findElement(statusButton).click();
     }
 
     // Прокрутка к блоку FAQ

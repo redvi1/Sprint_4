@@ -16,19 +16,11 @@ public class OrderPageConfirm {
     // Кнопка "Да"
     private final By yesButton = By.xpath("//button[text()='Да']");
 
-    // Кнопка "Нет"
-    private final By noButton = By.xpath("//button[text()='Нет']");
-
     // Методы
 
     // Нажать "Да"
     public void clickYes() {
         driver.findElement(yesButton).click();
-    }
-
-    // Нажать "Нет"
-    public void clickNo() {
-        driver.findElement(noButton).click();
     }
 
 }
